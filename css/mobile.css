@@ -37,7 +37,7 @@
     .header-container header {
         order: -1;
     }
-    #topbar .topbar-phone {
+    .header-container #topbar ul:first-child {
         display: none !important;
     }
     @media(max-width: 512px) {
