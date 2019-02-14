@@ -37,7 +37,7 @@
     .header-container header {
         order: -1;
     }
-    .header-container #topbar ul:first-child {
+    .header-container #topbar li:last-child {
         display: none !important;
     }
     @media(max-width: 512px) {
