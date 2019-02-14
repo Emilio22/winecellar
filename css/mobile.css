@@ -38,7 +38,7 @@
         order: -1;
     }
     #topbar .topbar-phone {
-        display: none;
+        display: none !important;
     }
     @media(max-width: 512px) {
         #gallery .image {
