@@ -4,17 +4,25 @@
     flex: 1;
 }
 
-#navbar ul li {
-    padding: 0 1rem 0 1rem;
+.header-container header {
+    order: -1;
+}
+
+/* enable mobile menu */
+
+/* Enable mobile menu */
+
+.menu-wrap {
+    display: inline-block;
+}
+
+#navbar {
+    display: none;
 }
 
 /* Display change for larger Cell Phones */
 
 @media(max-width: 600px) {
-    /* Enable mobile menu */
-    .menu-wrap {
-        display: inline-block;
-    }
     #hours-and-location {
         flex-direction: column;
     }
@@ -27,31 +35,29 @@
     footer .phone {
         display: inline;
     }
-    #navbar {
-        display: none;
-    }
     header a .logo {
         height: 13rem;
         margin: .5rem;
     }
-    .header-container header {
-        order: -1;
-    }
     .header-container #topbar li:last-child {
-        display: none !important;
+        display: none;
     }
-    @media(max-width: 512px) {
-        #gallery .image {
-            margin: 2px 0;
-        }
+}
+
+@media(max-width: 512px) {
+    #gallery .image {
+        margin: 2px 0;
     }
-    @media(max-width: 320px) {
-        footer div {
-            padding: 0 1.2rem 0 1.2rem;
-        }
-        footer a i {
-            padding-top: 1rem;
-            font-size: 2.8rem;
-        }
+}
+
+/* Very small phones */
+
+@media(max-width: 320px) {
+    footer div {
+        padding: 0 1.2rem 0 1.2rem;
+    }
+    footer a i {
+        padding-top: 1rem;
+        font-size: 2.8rem;
     }
 }
